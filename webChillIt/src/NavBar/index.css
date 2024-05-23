@@ -1,0 +1,281 @@
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../assets/fonts/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../assets/fonts/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F7F7F7;
+    color: white;
+    height: 60px;
+    font-weight: 500;
+    font-family: 'Poppins-Medium';
+}
+
+@media (max-width: 600px) {
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #F7F7F7;
+        color: white;
+        height: 54px;
+    }
+}
+
+.logoChillIt {
+    margin-left: 50px;
+    margin-top: 4px;
+}
+
+@media (max-width: 600px) {
+    .logoChillIt {
+        width: 54px;
+        height: 18px;
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+ul {
+    display: flex;
+    margin-right: 15px;
+}
+
+@media (max-width: 600px) {
+    ul {
+        display: none;
+    }
+}
+
+ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    list-style: none;
+    color: inherit;
+    transition: color 0.5s ease-in-out;
+}
+
+.normalLi {
+    color: #999999;
+    margin-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 5px 15px;
+    border: 1px solid #F7F7F7;
+    border-radius: 20px;
+    transition: border 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.normalLi:hover {
+    border: 1px solid #999999;
+}
+
+.normalLi ul {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    background-color: #F7F7F7;
+    padding: 0px;
+    margin: 10px;
+    margin-left: -15px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    z-index: 1000;
+}
+
+.normalLi.open ul {
+    opacity: 1;
+    visibility: visible;
+    max-height: 200px; /* Ajusta este valor según tus necesidades */
+}
+
+.normalLi ul li {
+    font-family: 'Poppins-Regular', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+    border-bottom: 1px solid #999999;
+}
+
+.normalLi ul li::after {
+    content: ">"; /* Añade esta línea */
+    margin-left: 10px; /* Añade esta línea */
+}
+
+
+.normalLi ul li:last-child {
+    border-bottom: none; /* Añade esta línea para eliminar la barra de separación del último elemento */
+}
+
+.contactLi { 
+    border-radius: 9999px; 
+    border: 1px solid #F7F7F7; 
+    background: linear-gradient(#F7F7F7, #F7F7F7) padding-box, 
+    linear-gradient(#F7F7F7) border-box; 
+    padding: 5px 20px; 
+    margin-right: 20px;
+    transition: border 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.contactLi:hover { 
+    border-radius: 9999px; 
+    border: 1px solid #0000; 
+    background: linear-gradient(#F7F7F7, #F7F7F7) padding-box, 
+    linear-gradient(100deg, #F8D15F 0%, #F69D63 45%, #BD8F9D 55%, #396CDC 75%, #329BFC 100%) border-box; 
+    padding: 5px 20px; 
+}
+
+.contactText{
+    background: linear-gradient(100deg, #F8D15F 0%, #F69D63 45%, #BD8F9D 55%, #396CDC 75%, #329BFC 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.languageLi{
+    color: #999999;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 5px 9px;
+    border: 1px solid #999999;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.selected {
+    border: 1px solid #999999 !important;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media (max-width: 600px) {
+    .hamburger {
+        display: block;
+        margin-right: 20px;
+    }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(90deg); }
+}
+
+@keyframes rotateBack {
+    from { transform: rotate(90deg); }
+    to { transform: rotate(0deg); }
+}
+
+.rotate {
+    animation: rotate 0.2s linear forwards;
+}
+
+.rotateBack {
+    animation: rotateBack 0.2s linear forwards;
+}
+
+.modal {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.3);
+}
+
+.modal-content {
+    background-color: #EDEDED;
+    margin: auto;
+    width: 80%;
+    height: fit-content;
+    border-radius: 25px;
+    color: #999999;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.ulModalMobile{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.ulModalMobile li{
+    margin-top: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #999999;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.ulModalMobile li {
+    position: relative;
+}
+
+.ulModalMobile li:last-child{
+    margin-bottom: 25px;
+    border-bottom: none;
+}
+
+.ulModalMobile li:first-child{
+    margin-top: 25px;
+}
+
+.ulModalMobile li::after {
+    content: ">";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ulModalMobile li:last-child::after {
+    content: "";
+}
