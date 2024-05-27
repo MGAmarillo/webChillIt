@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../../../assets/fonts/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../../../assets/fonts/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../../../assets/fonts/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../../../assets/fonts/Poppins-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../../../assets/fonts/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+
+.wineContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.comingSoonContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    background-color: #151413;
+}
+
+@media(max-width:600px){
+    .comingSoonContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100px;
+        background-color: #151413;
+    }
+}
+
+.comingSoonContainer p{
+    color: white;
+    font-family: 'Poppins-Bold';
+    font-size: 100px;
+    text-align: center;
+    opacity: 0.2;
+}
+
+@media(max-width:600px){
+    .comingSoonContainer p{
+        color: white;
+        font-family: 'Poppins-Bold';
+        font-size: 40px;
+        text-align: center;
+        opacity: 0.2;
+    }
+}
+
+.contentContainer_home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Artica/assets/home.png');
+    background-size: cover;
+    height: 500px;
+}
+
+@media(max-width:600px){
+    .contentContainer_home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../Artica/assets/home.png');
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+    }
+    
+}
+
+.logoChillIt{
+    margin-bottom: 20px;
+}
+
+@media(max-width:600px){
+    .logoChillIt{
+        width: 208px;
+        height: 73px;    
+    }
+}
+
+.logoWine{
+    margin-bottom: 20px;
+}
+
+.logoWine{
+    width: 300px;
+    margin-bottom: 20px;
+}
+
+.wineButton{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: 'Poppins-Light';
+    font-size: 17px;
+    border: none;
+    color: white;
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55% );
+    background-size: 200% 100%;
+    padding-right: 15px;
+    position: relative; /* Agrega esta línea */
+    transition: padding-right 0.5s; /* Agrega esta línea */
+    margin-top: 25px;
+}
+
+@media(max-width:600px){
+    .wineButton{
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-family: 'Poppins-Light';
+        font-size: 14px;
+        border: none;
+        color: white;
+        background: linear-gradient(100deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55% );
+        background-size: 200% 100%;
+        padding-right: 15px;
+        position: relative; /* Agrega esta línea */
+        transition: padding-right 0.5s; /* Agrega esta línea */
+        margin-bottom: 50px;
+    }
+}
+
+.wineButton::after{
+    content: ">>";
+    position: absolute;
+    right: 10px; /* Ajusta este valor para cambiar la posición de los caracteres ">>" */
+    color: #999999; /* Ajusta este valor para cambiar el color de los caracteres ">>" */
+    transition: right 0.5s;
+}
+
+.wineButton:hover{
+   padding-right: 0px;
+}
+
+.wineButton:hover::after{
+    right: 0px;
+}

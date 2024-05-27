@@ -58,7 +58,7 @@
         margin: 0;
         background-image: url('./assets/backgroundMainText.png');
         background-size: cover;
-        height: 75vh;
+        height: 100vh;
     }
 }
 
@@ -79,6 +79,7 @@ h1{
         font-weight: 700;
         color: #F7F7F7;
         margin-bottom: 0px; /* Ajusta el margen inferior */
+        margin-top: -20px;
         margin-left: 30px;
         font-family: 'Poppins-SemiBold';
     }
@@ -665,6 +666,12 @@ h3{
     margin-top: -5px;
 }
 
+@media(max-width:600px){
+    .desktop-break2{
+        display: none;
+    }
+}
+
 .machineButton{
     width: 150px;
     height: 40px;
@@ -907,6 +914,20 @@ h3{
     overflow: hidden;
 }
 
+@media(max-width:600px){
+    .whyChillit_cardSection_2{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 150px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+}
+
 .whyChillit_cardSection_2::before{
     content: "";
     position: absolute;
@@ -942,6 +963,20 @@ h3{
     border-radius: 20px;
     margin-right: 25px;
     overflow: hidden;
+}
+
+@media(max-width:600px){
+    .whyChillit_cardSection_3{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 300px;
+        height: 150px;
+        border-radius: 20px;
+        overflow: hidden;
+        margin: 0px;
+        margin-bottom: 20px;
+    }
 }
 
 .whyChillit_cardSection_3::before{
@@ -991,3 +1026,483 @@ h3{
     opacity: 0;
     transition: 0.5s ease-in-out;
 }
+
+@media (max-width:600px){
+    .whyChillit_cardSection_text2{
+        position: absolute;
+        font-family: 'Poppins-SemiBold';
+        font-size: 12px;
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        margin-right: 20px;
+        opacity: 0;
+        transition: 0.5s ease-in-out;
+    }
+}
+
+.whyChillit_textSection2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+    margin-bottom: 30px;
+
+}
+
+@media(max-width:600px){
+    .whyChillit_textSection2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: -60px;
+        margin-bottom: 30px;
+        margin-left: 0px;
+    
+    }
+    
+}
+
+.whyChillit_textSection2_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 20px;
+    background: linear-gradient(100deg, #B3B9BC 0%, #01A29B 50%, #44DAB2 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientWhyChillIt 2s infinite;
+}
+
+@keyframes gradientWhyChillIt {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+@media(max-width:600px){
+    .whyChillit_textSection2_text1{
+        font-family: 'Poppins-SemiBold';
+        font-size: 17px;
+        background: linear-gradient(100deg, #B3B9BC 0%, #01A29B 50%, #44DAB2 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientWhyChillIt 2s infinite;
+    }
+}
+
+.whyChillit_textSection2_text2{
+    font-family: 'Poppins-Light';
+    font-size: 15px;
+    color: #999999;
+    margin-top: 5px;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    .whyChillit_textSection2_text2{
+        font-family: 'Poppins-Light';
+        font-size: 14px;
+        color: #999999;
+        text-align: left;
+    }
+    
+}
+
+.whyChillit_textSection2_text2Bold{
+    font-family: 'Poppins-SemiBold';
+    font-size: 15px;
+    color: #999999;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    .whyChillit_textSection2_text2Bold{
+        font-family: 'Poppins-SemiBold';
+        font-size: 14px;
+        color: #999999;
+        text-align: left;
+    }
+    
+}
+
+
+.whyChillit_duoinfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+}
+
+.whyChillit_duoinfo_info1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #2E2E2E;
+    width: 50%;
+    height: 400px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo_info1{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        background-color: #2E2E2E;
+        width: 100%;
+        height: 350px;
+        margin-right: 0px;
+        overflow: hidden;
+    }
+}
+
+.whyChillit_duoinfo_info1_text1{
+    font-family: 'Poppins-Medium';
+    font-size: 20px;
+    color: white;
+    margin-top: 120px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo_info1_text1{
+        font-family: 'Poppins-Medium';
+        font-size: 20px;
+        margin: 0px;
+        color: white;
+        margin-left: 20px;
+    }
+}
+
+.whyChillit_duoinfo_info1_text2{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    background: linear-gradient(100deg, #B3B9BC 0%, #01A29B 50%, #44DAB2 100%);
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientWhyChillIt 2s infinite;
+    margin-top: -15px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo_info1_text2{
+        font-family: 'Poppins-SemiBold';
+        font-size: 35px;
+        background: linear-gradient(100deg, #B3B9BC 0%, #01A29B 50%, #44DAB2 100%);
+        background-size: 200% auto;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradientWhyChillIt 2s infinite;
+        margin-top: -10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+}
+
+.mobile-break4 {
+    display: none;
+}
+
+@media(max-width:600px){
+    .mobile-break4 {
+        display: block;
+        margin-top: -20px;
+    }
+}
+
+.whyChillit_duoinfo_info1_text3{
+    font-family: 'Poppins-Light';
+    font-size: 15px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo_info1_text3{
+        font-family: 'Poppins-Light';
+        font-size: 15px;
+        color: white;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+}
+
+.mobile-break5{
+    display: none;
+
+}
+
+@media(max-width:600px){
+    .mobile-break5{
+        display: block;
+        margin-top: 0px;
+    }
+}
+
+
+.whyChillit_duoinfo_info1_text4{
+    font-family: 'Poppins-Light';
+    font-size: 10px;
+    color: white;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo_info1_text4{
+        font-family: 'Poppins-Light';
+        font-size: 10px;
+        color: white;
+        margin-bottom: 10px;
+        text-align: left;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-bottom: 0px;
+    }
+}
+
+.whyChillit_duoinfo_info1_text3_bold{
+    font-family: 'Poppins-SemiBold';
+}
+
+.whyChillit_duoinfo_info2{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    width: 50%;
+    height: 400px;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo_info2{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        overflow: hidden;
+        width: 100%;
+        height: 350px;
+        margin-top: 10px;
+    }
+}
+
+.whyChillit_duoinfo_info2::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/whyChillIt-Trees.png');
+    background-size: cover;
+    transition: transform 2s ease-in-out;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo_info2::before{
+        background-size: cover;
+        background-position: 80% 0;
+    }
+}
+
+.whyChillit_duoinfo_info2:hover::before{
+    transform: scale(1.1);
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/whyChillIt-Trees.png');
+    background-size: cover;
+}
+
+@media (max-width:600px){
+    .whyChillit_duoinfo_info2:hover::before{
+        transform: scale(1.1);
+        background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./assets/whyChillIt-Trees.png');
+        background-size: cover;
+        background-position: 80% 0;
+    }
+}
+
+.whyChillit_duoinfo_info2_text1{
+    position: relative;
+    font-family: 'Poppins-Medium';
+    font-size: 25px;
+    color: white;
+}
+
+@media(max-width:600px){
+    .whyChillit_duoinfo_info2_text1{
+        position: relative;
+        font-family: 'Poppins-Medium';
+        font-size: 25px;
+        color: white;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.whyChilit-treeInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.whyChilit-treeInfo img{
+    width: 6%;
+}
+
+@media(max-width:600px){
+    .whyChilit-treeInfo img{
+        width: 20%;
+    }
+}
+
+.whyChilit-treeInfo_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 35px;
+    color: #999999;
+    margin-top: 40px;
+    margin-bottom: -20px;
+}
+
+@media(max-width:600px){
+    .whyChilit-treeInfo_text1{
+        font-family: 'Poppins-SemiBold';
+        font-size: 30px;
+        color: #999999;
+        margin-top: 20px;
+        margin-bottom: -20px;
+        text-align: center;
+    }
+}
+
+.whyChilit-treeInfo_text2{
+    font-family: 'Poppins-Medium';
+    font-size: 25px;
+    color: #999999;
+}
+
+@media(max-width:600px){
+    .whyChilit-treeInfo_text2{
+        font-family: 'Poppins-Medium';
+        font-size: 18px;
+        color: #999999;
+        text-align: center;
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+.mobile-break6{
+    display: none;
+}
+
+@media(max-width:600px){
+    .mobile-break6{
+        display: block;
+        margin-top: -10px;
+    }
+}
+
+.endlessChillIt{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(100deg, #F8D15F 0%, #F69D63 25%, #BD8F9D 50%, #396CDC 75%,#329BFC 100%);
+    background-size: 200% 200%;
+    animation: Gradient 4s ease infinite;
+}
+
+@media (max-width:600px){
+    .endlessChillIt{
+        width: 100%;
+        height: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(100deg, #F8D15F 0%, #F69D63 25%, #BD8F9D 50%, #396CDC 75%,#329BFC 100%);
+        background-size: 200% 200%;
+        animation: Gradient 4s ease infinite;
+    }
+}
+
+.endlessChillIt_text{
+    font-family: 'Poppins-Bold';
+    font-size: 70px;
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 0;
+    opacity: 20%;
+    letter-spacing: -5px;
+    word-spacing: 10px;
+    text-align: center;
+    line-height: 90px;
+}
+
+@media(max-width:600px){
+    .endlessChillIt_text{
+        font-family: 'Poppins-Bold';
+        font-size: 40px;
+        color: white;
+        margin-top: 15px;
+        margin-bottom: 0;
+        opacity: 20%;
+        letter-spacing: 0px;
+        word-spacing: 0px;
+        text-align: center;
+        line-height: 90px;
+    }
+}
+
+.mobile-break7{
+    display: none;
+}
+
+@media(max-width:600px){
+    .mobile-break7{
+        display: block;
+        margin-top: -50px;
+    } 
+}
+
+
+

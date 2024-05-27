@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Poppins-Regular';
+    src: url('../../../assets/fonts/Poppins-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Poppins-SemiBold';
+    src: url('../../../assets/fonts/Poppins-SemiBold.ttf');
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'Poppins-Medium';
+    src: url('../../../assets/fonts/Poppins-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../../../assets/fonts/Poppins-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Poppins-Bold';
+    src: url('../../../assets/fonts/Poppins-Bold.ttf');
+    font-weight: 700;
+}
+
+body, html {
+    overflow-x: hidden;
+}
+
+.duoLinksContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: fit-content
+}
+
+@media(max-width:600px){
+    .duoLinksContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: fit-content
+    }
+}
+
+.link1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/wine.png');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+@media(max-width:600px){
+    .link1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/wine.png');
+        background-size: cover;
+        margin-bottom: 5px;
+    }
+}
+
+.link2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/home.png');
+    background-size: cover;
+    margin-left: 5px;
+}
+
+@media(max-width:600px){
+    .link2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../assets/home.png');
+        background-size: cover;
+        margin-top: 5px;
+    }
+}
+
+.comingSoon{
+    font-family: 'Poppins-Light';
+    align-self: flex-start;
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+@media(max-width:600px){
+    .comingSoon{
+        font-family: 'Poppins-Light';
+        align-self: flex-start;
+        color: white;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+}
+
+.imageLogo{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+@media(max-width:600px){
+    .imageLogo{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+    }
+}
+
+.duoLinksButton{
+    width: 200px;
+    height: 40px;
+    border-radius: 30px;
+    font-family: 'Poppins-Light';
+    font-size: 17px;
+    border: none;
+    color: white;
+    background: linear-gradient(100deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55% );
+    background-size: 200% 100%;
+    padding-right: 15px;
+    position: relative; /* Agrega esta línea */
+    transition: padding-right 0.5s; /* Agrega esta línea */
+    margin-top: 25px;
+}
+
+@media(max-width:600px){
+    .duoLinksButton{
+        width: 150px;
+        height: 40px;
+        border-radius: 30px;
+        font-family: 'Poppins-Light';
+        font-size: 14px;
+        border: none;
+        color: white;
+        background: linear-gradient(100deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 55% );
+        background-size: 200% 100%;
+        padding-right: 15px;
+        position: relative; /* Agrega esta línea */
+        transition: padding-right 0.5s; /* Agrega esta línea */
+        margin-bottom: 50px;
+    }
+}
+
+.duoLinksButton::after{
+    content: ">>";
+    position: absolute;
+    right: 10px; /* Ajusta este valor para cambiar la posición de los caracteres ">>" */
+    color: #999999; /* Ajusta este valor para cambiar el color de los caracteres ">>" */
+    transition: right 0.5s;
+}
+
+.duoLinksButton:hover{
+   padding-right: 0px;
+}
+
+.duoLinksButton:hover::after{
+    right: 0px;
+}
+
+@media(max-width:600px){
+    .imageBrand{
+        width:200px;
+    }
+}

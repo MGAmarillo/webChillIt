@@ -1,0 +1,549 @@
+.circlesContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #2e2e2e;
+}
+
+.circlesContainer_text1 {
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    background: linear-gradient(100deg, #a687b8 25%, #f8bfad 50%, #ededed 75%, #d4d8da 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s ease infinite;
+    text-align: center;
+    margin-top: 50px;
+    align-self: flex-start;
+    margin-left: 50px;
+}
+
+@media(max-width:600px){
+    .circlesContainer_text1 {
+        font-family: 'Poppins-SemiBold';
+        font-size: 30px;
+        background: linear-gradient(100deg, #a687b8 25%, #f8bfad 50%, #ededed 75%, #d4d8da 100%);
+        background-size: 200% 100%;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation: gradient 4s ease infinite;
+        text-align: center;
+        margin-top: 50px;
+        align-self: center;
+        margin-left: 00px;
+    }
+}
+
+.circlesContainer2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+@media(max-width:600px){
+    .circlesContainer2{
+        flex-direction: column;
+    }
+
+}
+
+.circle1{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/pinkCircleSlider.png');
+    background-size: cover;
+    margin-right: 20px;
+}
+
+@media(max-width:600px){
+    .circle1{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+.circle1_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 60px;
+    background: linear-gradient(100deg, #a687b8 25%, #f8bfad 50%, #ededed 75%, #d4d8da 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.circle1_text2{
+    font-family: 'Poppins-SemiBold';
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+}
+
+.circle1_text3{
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.desktop-Break{
+    display: block;
+}
+
+.circle2{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/pinkCircleSlider.png');
+    background-size: cover;
+    margin-right: 20px;
+}
+
+@media(max-width:600px){
+    .circle2{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.circle2_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.circle2_text2{
+    font-family: 'Poppins-SemiBold';
+    font-size: 35px;
+    text-align: center;
+    background: linear-gradient(100deg, #a687b8 25%, #f8bfad 50%, #ededed 75%, #d4d8da 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s ease infinite;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -10px;
+
+}
+
+.circle2_text3{
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.desktop-Break2{
+    display: block;
+    margin-top: -20px;
+}
+
+.fontBold{
+    font-family: 'Poppins-SemiBold';
+}
+
+.circle3{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/pinkCircleSlider.png');
+    background-size: cover;
+}
+
+@media(max-width:600px){
+    .circle3{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+.circle3_text1{
+    font-family: 'Poppins-Bold';
+    font-size: 60px;
+    background: linear-gradient(100deg, #a687b8 25%, #f8bfad 50%, #ededed 75%, #d4d8da 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.circle3_text2{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -20px;
+}
+
+.circle3_text3{
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.circle4{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/greenCircleSlider.png');
+    background-size: cover;
+    margin-right: 20px;
+}
+
+@media(max-width:600px){
+    .circle4{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+.circle4_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.gradient{
+    font-family: 'Poppins-SemiBold';
+    font-size: 70px;
+    background: linear-gradient(100deg, #D4D8DA 25%, #B3B9BC 50%, #01A29B 75%, #44DAB2 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.circle4_text2{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -40px;
+}
+
+.circle4_text3{
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.moreInfo{
+    font-size: 10px;
+}
+
+.desktop-Break3{
+    display: block;
+    margin-top: 20px;
+}
+
+.circle5{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/greenCircleSlider.png');
+    background-size: cover;
+    margin-right: 20px;
+}
+
+@media(max-width:600px){
+    .circle5{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.circle5_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.circle5_text2{
+    font-family: 'Poppins-SemiBold';
+    font-size: 23px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: -40px;
+}
+
+.desktop-Break4{
+    display: block;
+    margin-top: -10px;
+}
+
+.circle5_text3{
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.circle6{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/pinkCircleSlider.png');
+    background-size: cover;
+    margin-right:20px
+}
+
+@media(max-width:600px){
+    .circle6{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.circle6_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.circle6_text2{
+    font-family: 'Poppins-Bold';
+    font-size: 35px;
+    background: linear-gradient(100deg, #a687b8 25%, #f8bfad 50%, #ededed 75%, #d4d8da 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s ease infinite;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.circle6_text3{
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.circle7{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/pinkCircleSlider.png');
+    background-size: cover;
+    margin-right:20px
+}
+
+@media(max-width:600px){
+    .circle7{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.circle7_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.circle7_text2{
+    font-family: 'Poppins-Bold';
+    font-size: 35px;
+    background: linear-gradient(100deg, #a687b8 25%, #f8bfad 50%, #ededed 75%, #d4d8da 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s ease infinite;
+    text-align: center;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.circle7_text3{
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.circle8{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/pinkCircleSlider.png');
+    background-size: cover;
+    margin-right:20px
+}
+
+@media(max-width:600px){
+    .circle8{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+}
+
+
+.circle8_text1{
+    font-family: 'Poppins-SemiBold';
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.circle8_text2{
+    font-family: 'Poppins-Bold';
+    font-size: 35px;
+    background: linear-gradient(100deg, #a687b8 25%, #f8bfad 50%, #ededed 75%, #d4d8da 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 4s ease infinite;
+    text-align: center;
+    margin: 0;
+    margin-right: 5px;
+    padding: 0;
+    margin-top: -10px;
+}
+
+.desktop-Break5{
+    display: block;
+    margin-top: -10px;
+}
+
+.circle8_text3{
+    font-family: 'Poppins-Light';
+    font-size: 13px;
+    color: white;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-right: 5px;
+}

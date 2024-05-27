@@ -1,0 +1,17 @@
+.billboardContainer{
+    width: 100%;
+    height: 400px;
+    background: url('../../assets/billboard.png');
+    background-size: cover;
+    background-position: center;
+}
+
+@media(max-width:600px){
+    .billboardContainer{
+        width: 100%;
+        height: 200px;
+        background: url('../../assets/billboard.png');
+        background-size: cover;
+        background-position: center;
+    }
+}

@@ -40,14 +40,15 @@ nav {
 
 .logoChillIt {
     margin-left: 50px;
-    margin-top: 4px;
+    margin-top: 25px;
 }
 
 @media (max-width: 600px) {
     .logoChillIt {
-        width: 54px;
-        height: 18px;
+        width: 20px;
+        height: 14px;
         margin-left: 20px;
+        margin-top:60px;
         margin-bottom: 20px;
     }
 }
@@ -206,7 +207,7 @@ a {
 .modal {
     display: block; 
     position: fixed; 
-    z-index: 1; 
+    z-index: 4; 
     padding-top: 100px; 
     left: 0;
     top: 0;
@@ -215,6 +216,7 @@ a {
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.3);
+    font-family: 'Poppins-Medium';
 }
 
 .modal-content {
@@ -278,4 +280,45 @@ a {
 
 .ulModalMobile li:last-child::after {
     content: "";
+}
+
+.ulModalMobile2{
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+.ulModalMobile2 li{
+    margin-top: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #999999;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.ulModalMobile2 li::after {
+    content: ">";
+    position: absolute;
+    left: 200px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.ulModalMobile2 li:last-child::after {
+    content: ">";
+}
+
+.ulModalMobile2 li:last-child{
+    margin-bottom: 15px;
+    border-bottom: 1px solid #999999;
+}
+
+.ulModalMobile2 li {
+    position: relative;
+}
+
+.hidden {
+    display: none;
 }
