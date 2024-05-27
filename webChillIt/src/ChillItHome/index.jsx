@@ -1,7 +1,7 @@
 import './chillItHome.css'
 import brandChilIt from '../Artica/assets/chillItLogo.png'
 import brandHome from '../Artica/assets/homeBrand.png'
-
+import {Link} from 'react-router-dom'
 import{useEffect, useRef} from 'react'
 import gsap from 'gsap'
 
@@ -47,7 +47,12 @@ export const ChillItHome = () => {
                 <div className="contentContainer_home">
                     <img ref={logo} className='logoChillIt' src={brandChilIt} alt="" />
                     <img ref={brand} className='logoWine' src={brandHome} alt="" />
-                    <button className='wineButton'>I want one</button>
+                    <button className='wineButton' onClick={() => {
+  window.scrollTo(0, 0);
+  ScrollTrigger.refresh();
+}}>
+  <Link to='/contact' style={{ color: 'inherit', textDecoration: 'inherit'}}>I want one</Link>
+</button>
                 </div>
             </div>
         </>

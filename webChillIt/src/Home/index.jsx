@@ -6,6 +6,9 @@ import vector from './assets/tree-vector.png';
 import { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { SplitText } from 'gsap/SplitText';
+import { Partners } from './Components/Partners/index'
+import {News} from './Components/News/index'
+import { Link } from 'react-router-dom';
 
 gsap.registerPlugin(SplitText);
 
@@ -441,7 +444,13 @@ export const Home = () => {
                 <p className='machineText1'>Our Product: <span className='machineText1Bold'>ARTICA</span></p>
                 <p className='machineText2'>Extra cold <span className="desktop-break"></span> <span className="mobile-break"></span>drinks in<span className="desktop-break"></span><span className="mobile-break"></span>seconds</p>
                 <p className='machineText3'>Artica reduces the temperature of a<span className="desktop-break2"></span> beverage from 25°C <span className="lightFont">(77°F)</span> to -1°C <span className="desktop-break2"></span><span className="lightFont">(30°F)</span> in 30 seconds </p>
-                <button className='machineButton'>Features</button>
+                <button className='machineButton' onClick={() => {
+  event.preventDefault();
+  window.scrollTo(0, 0);
+  ScrollTrigger.refresh();
+}}>
+  <Link to='/artica' style={{ color: 'inherit', textDecoration: 'inherit'}}>Features</Link>
+</button>
             </div>
         </div>
         <div className='chillThePlanet'>
@@ -493,6 +502,8 @@ export const Home = () => {
             <p className='endlessChillIt_text'>With Chill it,<span className="mobile-break7"></span> possibilities<span className="mobile-break7"></span> <span className="desktop-break2"></span> are endless </p>
         </div>
         </div>
+        <Partners />
+        <News />
         </>
     );
 }

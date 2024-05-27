@@ -2,7 +2,7 @@ import './duoLinks.css'
 import chillItLogo from '../../assets/chillItLogo.png'
 import wineBrand from '../../assets/wineBrand.png'
 import homeBrand from '../../assets/homeBrand.png'
-
+import {Link} from 'react-router-dom'
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
@@ -66,14 +66,24 @@ export const DuoLinks = () => {
                     <p className='comingSoon'>Coming soon...</p>
                     <img className='imageLogo' src={chillItLogo} alt="" />
                     <img className='imageBrand' src={wineBrand} alt="" />
-                    <button className='duoLinksButton'>I want one</button>
+                    <button className='duoLinksButton' onClick={() => {
+  window.scrollTo(0, 0);
+  ScrollTrigger.refresh();
+}}>
+  <Link to='/wine' style={{ color: 'inherit', textDecoration: 'inherit'}}>I want one</Link>
+</button>
                 </div>
 
                 <div ref={link2} className='link2'>
                     <p className='comingSoon'>Coming soon...</p>
                     <img className='imageLogo' src={chillItLogo} alt="" />
                     <img className='imageBrand' src={homeBrand} alt="" />
-                    <button className='duoLinksButton'>I want one</button>
+                    <button className='duoLinksButton' onClick={() => {
+  window.scrollTo(0, 0);
+  ScrollTrigger.refresh();
+}}>
+  <Link to='/home' style={{ color: 'inherit', textDecoration: 'inherit'}}>I want one</Link>
+</button>
                 </div>
             </div>
         </>

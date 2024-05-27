@@ -1,0 +1,120 @@
+.partnersBrands_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+@media(max-width:600px){
+    .partnersBrands_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
+
+.partnersBrands_container_section1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+@media(max-width:600px){
+    .partnersBrands_container_section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+}
+
+.partnersBrands_container_section1_text1{
+    font-family: 'Poppins-SemiBold';
+    color: #999999;
+    font-size: 30px;
+    align-self: flex-start;
+    margin-bottom: -20px;
+    margin-left: 140px;
+}
+
+@media(max-width:600px){
+    .partnersBrands_container_section1_text1{
+        font-family: 'Poppins-SemiBold';
+        color: #999999;
+        font-size: 30px;
+        margin-bottom: -20px;
+        margin-left: 0px;
+        align-self: center;
+    }
+}
+
+.partnersBrands_container_section1_text2{
+    font-family: 'Poppins-Light';
+    color: #999999;
+    font-size: 20px;
+    align-self: flex-start;
+    margin-left: 140px;
+}
+
+@media(max-width:600px){
+    .partnersBrands_container_section1_text2{
+        font-family: 'Poppins-Light';
+        color: #999999;
+        font-size: 20px;
+        align-self: center;
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+}
+
+.partnersBrands_container_section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    overflow: hidden;
+}
+
+@media(max-width:600px){
+    .partnersBrands_container_section2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+.partnersBrands_container_section2_draggeable{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.partnersBrands_container_section2_imageBrand{
+    margin-right: 20px;
+}
+
+.partnersBrands_container_section2_imageBrand:first-child{
+    margin-left: 750px;
+}
+
+@media(max-width:600px){
+    .partnersBrands_container_section2_imageBrand:first-child{
+        margin-left: 1050px;
+    }
+}

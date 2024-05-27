@@ -1,8 +1,8 @@
 import './wine.css'
 import brandChilIt from '../Artica/assets/chillItLogo.png'
 import brandWine from '../Artica/assets/wineBrand.png'
-
-import{useEffect, useRef} from 'react'
+import {Link} from 'react-router-dom'
+import{useEffect, useRef,} from 'react'
 import gsap from 'gsap'
 
 
@@ -47,7 +47,12 @@ export const Wine = () => {
                 <div className="contentContainer">
                     <img ref={logo} className='logoChillIt' src={brandChilIt} alt="" />
                     <img ref={brand} className='logoWine' src={brandWine} alt="" />
-                    <button className='wineButton'>I want one</button>
+                    <button className='wineButton' onClick={() => {
+  window.scrollTo(0, 0);
+  ScrollTrigger.refresh();
+}}>
+  <Link to='/contact' style={{ color: 'inherit', textDecoration: 'inherit'}}>I want one</Link>
+</button>
                 </div>
             </div>
         </>
